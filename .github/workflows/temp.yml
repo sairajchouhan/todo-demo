@@ -7,11 +7,11 @@ on:
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
-  install-dependencies-and-caching:
+  first-job:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - name: Step 2 - GitHub Action if statement (true)
+      - name:
         env:
           MY_SECRET: ${{ secrets.MY_SECRET }}
         run: echo "$MY_SECRET" | wc
