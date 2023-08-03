@@ -23,4 +23,4 @@ jobs:
           node-version: '16.x'
       - name: echo secrets
         run: |
-          echo ${{ secrets.MY_TOKEN }}
+          echo "${{ secrets.MY_TOKEN }}" | wc
